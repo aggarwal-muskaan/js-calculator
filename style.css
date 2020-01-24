@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    /* border: .5px solid black; */
+}
+
+body,html{
+    margin-top:4rem;
+    background-color: black;
+}
+.single{
+    width: 25%;
+}
+.double{
+    width:50%;
+    background-color: lightgray
+}
+.triple{
+    width: 75%;
+}
+.user-operands{
+    background-color: grey;
+    color: black;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    text-align: right;
+    padding: 1rem .2rem ;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    overflow-x: scroll;
+    /* content: attr(0); */
+}
+
+.main-body div{
+    color: white;
+    background-color:black;
+    display: flex;
+    flex-direction: row;   
+    /* align-content: stretch; */
+    justify-content:space-between ;
+    /* border-collapse: collapse; */
+}
+
+                                /* layout for mobiles or screens with minimum width of 320px */
+@media(min-width:320px){
+
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        margin:0 3rem 0 3rem;
+        border: .20rem solid black;
+    }
+    
+    .main-body div button{
+        /* border-radius: .5px; */
+        font-size: 1rem;
+        font-weight: bold;
+        height: 2.5rem;
+        margin: 0;
+        padding: 0;
+        border: .01rem solid black;
+        cursor: pointer;
+    }
+
+    .line button:last-child{
+        background-color: chocolate;
+        color: #ffffff;
+    }
+
+    .line button:hover{
+        background-color: #dfb07e;
+    }
+    .line button:active{
+        background-color: #dd8d37;
+    }
+    
+}
+
+                                        /* layout for tablets or screens with minimum width of 680px */
+@media(min-width:680px){
+
+    .main-body{
+        margin: 0 15rem 0 15rem;
+    }
+    /* .line button{
+        height: 8rem;
+    } */
+}
+
+                                        /* layout for laptops or screens with minimum width of 1000px */
+@media(min-width:1000px){
+
+    .main-body{
+        margin:0 20rem 0 20rem;
+    }
+    .main-body div button{
+        height: 4rem;
+        font-size: 2rem;
+    }
+    .user-operands{
+        height: 5rem;
+        font-size: 3rem;
+    }
+    /* .line button{
+        height: 100px;
+    } */
+}
+
+                                        /* layout for notebook,tv or screens with minimum width of 1300px */
+@media(min-width:1300px){
+
+    .main-body{
+        margin: 0 34rem 0 34rem;
+    }
+    
+    /* .line button{
+        height: 8rem;
+    } */
+}
